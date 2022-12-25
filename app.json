@@ -6,8 +6,7 @@
     "pages/user/question/question",
     "pages/monitor/device/device",
     "pages/monitor/device_detail/device_detail",
-    "pages/system/my/my",
-    "pages/monitor/action/action"
+    "pages/system/my/my"
   ],
   "window": {
     "backgroundTextStyle": "dark",
