@@ -1,9 +1,0 @@
-<!--pages/monitor/action/action.wxml-->
-<view class="container">
-  <view>
-    <button bindtap="onDeviceListTap">查询设备列表</button>
-  </view>
-  <view>
-    <view>{{deviceList}}</view>
-  </view>
-</view>

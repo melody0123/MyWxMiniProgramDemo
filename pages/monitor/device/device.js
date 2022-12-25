@@ -1,5 +1,7 @@
+const app = getApp();
 Page({
   data: {
+    deviceList:'',
     showsearch:false,   //显示搜索按钮
     searchtext:'',  //搜索文字
     filterdata:{},  //筛选条件数据
@@ -18,7 +20,7 @@ Page({
     page: 0  //分页
   },
   onLoad: function () { //加载数据渲染页面
-    this.fetchServiceData();
+    this.getDeviceList();
     this.fetchFilterData();
   },
   fetchFilterData:function(){ //获取筛选条件
@@ -213,7 +215,23 @@ Page({
       }
     })
   },
-  fetchServiceData:function(){  //获取城市列表
+  getDeviceList:function() {
+    let that = this;
+    wx.request({
+      url: 'https://www.ylxteach.net/teach-demo/device_file_servlet_action?action=get_device_record',
+      data: {"time_from": "2022-11-01 00:00:00", "time_to": "2022-12-30 23:59:59"},
+      method: 'POST',
+      header: {"content-type": "application/x-www-form-urlencoded", "x-requested-with": "XMLHttpRequest", "Cookie": "JSESSIONID=" + app.globalData.sessionId},
+      success: function(res) {
+        console.log("[onDeviceListTap]查询成功：" + JSON.stringify(res));
+        that.fetchServiceData(res.data);
+      },
+      fail: function(res) {
+        console.log("[onDeviceListTap]查询失败：" + JSON.stringify(res));
+      }
+    })
+  },
+  fetchServiceData:function(data){  //获取城市列表
     let _this = this;
     wx.showToast({
       title: '加载中',
@@ -225,12 +243,12 @@ Page({
     })
     const page = this.data.page;
     const newlist = [];
-    for (var i = (page-1)*perpage; i < page*perpage; i++) {
+    for (var i = 0; i < data.aaData.length; i++) {
       newlist.push({
-        "id":i+1,
-        "name":"高速公路测速仪"+(i+1),
-        "city":"成都",
-        "tag":"测速设备",
+        "id":data.aaData[i].device_id,
+        "name":data.aaData[i].device_name,
+        "city":data.aaData[i].create_time,
+        "tag":data.aaData[i].device_type,
         "imgurl":"http://img.mukewang.com/57fdecf80001fb0406000338-240-135.jpg"
       })
     }

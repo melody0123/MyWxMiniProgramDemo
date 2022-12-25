@@ -42,7 +42,7 @@
 					<view class="service-tags">
 						<text>{{item.tag}}</text>
 					</view>
-					<text class="service-city">服务城市：{{item.city}}</text>
+					<text class="service-city">创建时间：{{item.city}}</text>
 				</view>
 			</navigator>
 		</view>
