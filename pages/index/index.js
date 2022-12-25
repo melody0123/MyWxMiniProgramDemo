@@ -40,6 +40,11 @@ Page({
           'icon':'./../../images/icon_13.png',
           'text':'添加设备',
           'url':'/pages/device/add_device/add_device'
+        },
+        {
+          'icon':'./../../images/icon_01.png',
+          'text':'电子木鱼',
+          'url':'/pages/user/wooden_fish/wooden_fish'
         }
       ],
       imgUrls: [

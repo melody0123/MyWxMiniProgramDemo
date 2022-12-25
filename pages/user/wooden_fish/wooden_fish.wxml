@@ -1,0 +1,6 @@
+<!--pages/user/wooden_fish/wooden_fish.wxml-->
+<view>
+  <view class="ripple" style="{{rippleStyle}}"></view>
+  <image animation="{{animationData}}" class="muyuicon" src="{{bgurl}}" />
+  <view class="container" bindtouchstart="containerTap"></view>
+</view>
