@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/device/add_device/add_device",
+    "pages/device/request_for_maintain/request_for_maintain",
+    "pages/user/question/question",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#f7982a",
+    "navigationBarTitleText": "设备管理",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "服务",
+        "iconPath": "images/xihuan.png",
+        "selectedIconPath": "images/xihuanfill.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我发起的",
+        "iconPath": "images/yonghu.png",
+        "selectedIconPath": "images/yonghufill.png"
+      }
+    ],
+    "color": "#333",
+    "selectedColor": "#f7982a",
+    "backgroundColor": "#f6f6f6",
+    "borderStyle": "white"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "sitemapLocation": "sitemap.json"
+}
