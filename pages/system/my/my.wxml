@@ -1,0 +1,16 @@
+<view class="container">
+	<view class="my-list">
+		<navigator class="my-item" url="../myconferencelist/myconferencelist">
+			<image src="../../../images/icon_24.png" mode="aspectFit"></image>
+			<text>添加设备</text>
+		</navigator>
+		<navigator class="my-item" url="../myconferencelist/myconferencelist">
+			<image src="../../../images/icon_26.png" mode="aspectFit"></image>
+			<text>设备报修</text>
+		</navigator>
+		<navigator class="my-item" url="../myconferencelist/myconferencelist">
+			<image src="../../../images/icon_30.png" mode="aspectFit"></image>
+			<text>问题反馈</text>
+		</navigator>
+	</view>
+</view>
