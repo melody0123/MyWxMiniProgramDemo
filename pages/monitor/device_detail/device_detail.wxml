@@ -14,6 +14,6 @@
 		</view>
 	</view>
 	<view class="container-footer">
-		<button class="btn-orange btn-block">立即咨询</button>
+		<button class="btn-orange btn-block">立即查看</button>
 	</view>
 </view>

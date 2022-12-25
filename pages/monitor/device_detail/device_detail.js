@@ -6,9 +6,9 @@ Page({
     const i = options.id;
     this.setData({
       servicedetail:{
-        "name":"上海拜特信息技术有限公司"+i,
-        "city":"上海",
-        "tag":"法律咨询",
+        "name":"高速公路测速仪"+i,
+        "city":"成都",
+        "tag":"测速设备",
         "imgurl":"http://img.mukewang.com/57fdecf80001fb0406000338-240-135.jpg"
       }
     })

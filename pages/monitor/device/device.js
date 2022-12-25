@@ -31,7 +31,7 @@ Page({
             },
             {
               "id": 1,
-              "title": "人力资源",
+              "title": "道路测速",
               "subsort": [
                 {
                     "id": 1,
@@ -39,43 +39,43 @@ Page({
                 },
                 {
                     "id": 11,
-                    "title": "社会及商业保险"
+                    "title": "测速设备"
                 },
                 {
                     "id": 12,
-                    "title": "招聘、猎头"
+                    "title": "电子眼"
                 },
                 {
                     "id": 13,
-                    "title": "薪酬绩效"
+                    "title": "红绿灯"
                 },
               ]
             },
             {
               "id": 2,
-              "title": "财务法务",
+              "title": "灾难预防",
               "subsort": [
                 {
                     "id": 2,
-                    "title": "全部"
+                    "title": "温度传感器"
                 },
                 {
                     "id": 21,
-                    "title": "知识产权保护"
+                    "title": "烟雾传感器"
                 },
                 {
                     "id": 22,
-                    "title": "工商注册"
+                    "title": "门窗压力传感器"
                 },
                 {
                     "id": 23,
-                    "title": "法律咨询"
+                    "title": "监控摄像头"
                 },
               ]
             },
             {
               "id": 3,
-              "title": "行政办公",
+              "title": "智慧农业",
               "subsort": [
                 {
                     "id": 3,
@@ -83,17 +83,17 @@ Page({
                 },
                 {
                     "id": 31,
-                    "title": "翻译"
+                    "title": "湿度传感器"
                 },
                 {
                     "id": 32,
-                    "title": "速记"
+                    "title": "温度传感器"
                 }
               ]
             },
             {
               "id": 4,
-              "title": "创业指导",
+              "title": "天网系统",
               "subsort": [
                 {
                     "id": 4,
@@ -101,7 +101,7 @@ Page({
                 },
                 {
                     "id": 41,
-                    "title": "创业培训"
+                    "title": "面部识别电子眼"
                 }
               ]
             },
@@ -228,9 +228,9 @@ Page({
     for (var i = (page-1)*perpage; i < page*perpage; i++) {
       newlist.push({
         "id":i+1,
-        "name":"上海拜特信息技术有限公司"+(i+1),
-        "city":"上海",
-        "tag":"法律咨询",
+        "name":"高速公路测速仪"+(i+1),
+        "city":"成都",
+        "tag":"测速设备",
         "imgurl":"http://img.mukewang.com/57fdecf80001fb0406000338-240-135.jpg"
       })
     }
