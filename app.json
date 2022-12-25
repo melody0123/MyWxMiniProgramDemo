@@ -4,6 +4,8 @@
     "pages/device/add_device/add_device",
     "pages/device/request_for_maintain/request_for_maintain",
     "pages/user/question/question",
+    "pages/monitor/device/device",
+    "pages/monitor/device_detail/device_detail",
     "pages/my/my"
   ],
   "window": {

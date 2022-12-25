@@ -24,7 +24,7 @@ Page({
         {
           'icon':'./../../images/icon_03.png',
           'text':'设备查询',
-          'url':'service'
+          'url':'/pages/monitor/device/device'
         },
         {
           'icon':'./../../images/icon_09.png',
